@@ -26,7 +26,7 @@ public class TestOne {
 		dc.setCapability("platformVersion", "4.2.2");
 		dc.setCapability("appPackage", "com.android.calculator2");
 		dc.setCapability("appActivity", "com.android.calculator2.Calculator");
-//		dc.setCapability("avd", "4.2.2");
+//		dc.setCapability("avd", "4.2.2"); //to launch avd automatically
 		
 		//url
 		URL u=new URL("http://0.0.0.0:4723/wd/hub");
