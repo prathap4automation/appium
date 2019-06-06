@@ -50,8 +50,9 @@ public class OptionsList {
 			//way-1
 //			List<WebElement> rootElement = driver.findElements(By.xpath("//*[@class='android.widget.ScrollView']/*[@class='android.view.ViewGroup']/*[@class='android.view.ViewGroup']/*[@class='android.view.ViewGroup']"));
 			//way-2
-			List<WebElement> rootElement = driver.findElements(By.xpath("//android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[*]/android.view.ViewGroup[*]"));
+			List<WebElement> rootElement = driver.findElements(By.xpath("//android.widget.ScrollView[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[*]"));
 			System.out.println("List size: "+rootElement.size());
+			//click on double tap
 			for(WebElement ele: rootElement){
 				System.out.println(ele.findElement(By.xpath(".//android.widget.TextView")).getText());
 				if(ele.findElement(By.xpath(".//android.widget.TextView")).getText().equals("Double Tap")){
